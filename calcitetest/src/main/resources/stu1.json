@@ -1,0 +1,16 @@
+{
+  "version":"1.0",
+  "defaultSchema":"elasticsearch",
+  "schemas": [
+    {
+      "type" : "custom",
+      "name" : "elasticsearch",
+      "factory" : "org.apache.calcite.adapter.elasticsearch.ElasticsearchSchemaFactory",
+      "operand" : {
+        "coordinates" : "{'linux-1':9200}",
+        "userConfig" : "{'bulk.flush.max.actions':10 , 'bulk.flush.max.size.mb': 1}",
+        "index" : "stu"
+      }
+    }
+  ]
+}
