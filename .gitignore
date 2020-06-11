@@ -6,3 +6,6 @@ target
 Spark
 SparkLearn
 
+**/.idea
+**/target
+**/*.iml
