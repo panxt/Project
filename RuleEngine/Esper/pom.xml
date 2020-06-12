@@ -11,17 +11,59 @@
 
     <groupId>com.panxt.RuleEngine</groupId>
     <artifactId>Esper</artifactId>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>com.espertech</groupId>-->
+<!--            <artifactId>esper</artifactId>-->
+<!--            <version>7.1.0</version>-->
+<!--        </dependency>-->
+
+        <!--<dependency>
+            <groupId>com.espertech</groupId>
+            <artifactId>esper-parent</artifactId>
+            <version>8.5.0</version>
+            <type>pom</type>
+        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/com.espertech/esper-common -->
         <dependency>
             <groupId>com.espertech</groupId>
-            <artifactId>esper</artifactId>
-            <version>7.1.0</version>
+            <artifactId>esper-common</artifactId>
+            <version>8.5.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.espertech/esper-runtime -->
+        <dependency>
+            <groupId>com.espertech</groupId>
+            <artifactId>esper-runtime</artifactId>
+            <version>8.5.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.espertech/esper-compiler -->
+        <dependency>
+            <groupId>com.espertech</groupId>
+            <artifactId>esper-compiler</artifactId>
+            <version>8.5.0</version>
+        </dependency>
+
+
+
     </dependencies>
 
 </project>

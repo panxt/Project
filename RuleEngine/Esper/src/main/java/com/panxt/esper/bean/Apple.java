@@ -1,4 +1,4 @@
-package com.panxt.esper.helloworld;
+package com.panxt.esper.bean;
 
 public class Apple {
     private int id;
